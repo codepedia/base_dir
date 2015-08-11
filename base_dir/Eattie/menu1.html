@@ -1,0 +1,553 @@
+<!doctype html>
+<!--Conditionals for IE8-9 Support-->
+<!--[if IE 8]><html lang="en" class="ie ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eattie - Restaurant HTML Template</title>
+    <meta name="description" content="Responsive Restaurant HTML Template" />
+    <meta name="keywords" content="responsive html template, restaurant, cafe, bootstrap 3.0, css, jquery" />
+    <meta name="author" content="8Guild" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!--Bootstrap 3.3.2-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--Icons Fonts-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--Modernizr-->
+    <script src="js/libs/modernizr.custom.js"></script>
+    <!--Adding Media Queries Support for IE8-->
+    <!--[if lt IE 9]>
+      <script src="js/plugins/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <!--Body-->
+  <body>
+  
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">
+        <img class="svg" src="img/logo-big.svg" width="133" height="120" alt="Eattie"/>
+        <img class="png" src="img/logo-big.png" width="133" height="120" alt="Eattie"/>
+        <div id="fountainG">
+          <div id="fountainG_1" class="fountainG"></div>
+          <div id="fountainG_2" class="fountainG"></div>
+          <div id="fountainG_3" class="fountainG"></div>
+          <div id="fountainG_4" class="fountainG"></div>
+          <div id="fountainG_5" class="fountainG"></div>
+          <div id="fountainG_6" class="fountainG"></div>
+          <div id="fountainG_7" class="fountainG"></div>
+          <div id="fountainG_8" class="fountainG"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Header-->
+    <header class="pinned"><!--By adding "pinned" class we pinned header to the top of the window-->
+      <div class="container">
+        <a class="logo" href="home-slideshow.html"></a>
+        
+        <!--Navigation-->
+        <nav class="navbar" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navi-collapse">
+            <ul class="nav navbar-nav nav-left">
+              <li><a href="home-slideshow.html">home</a></li>
+              <li><a href="home-slideshow.html#about">about</a></li>
+              <li><a href="home-slideshow.html#serv-reservation">services/reservation</a></li>
+              <li class="last"><a href="home-slideshow.html#news">news</a></li>
+            </ul>
+            <ul class="nav navbar-nav nav-right">
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">menu <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="menu1.html"> Brooklyn -- Bay Ridge</a></li>
+                  <li><a href="menu2.html"> Brooklyn -- Downtwon </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">reviews <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="reviews.html">reviews list</a></li>
+                  <li><a href="reviews-single.html">reviews single</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">chef recipes <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="recipes.html">chef recipes list</a></li>
+                  <li><a href="recipes-single.html">chef recipes single</a></li>
+                </ul>
+              </li>
+              <li class="last"><a href="home-slideshow.html#contacts">contacts</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav><!--Close Navigation -->
+      </div>
+    </header>
+    
+    <!--Menu (1 column layout Accordion)-->
+    <section class="block menu1">
+      <div class="fsbg">
+        <!--The id (like id="r_1") of the div element should correspond with the rel attribute (like rel="r_1") of the link below. Thus we connect link with background image-->
+        <div class="visible" style="background-image: url(img/menu/default.jpg)"></div><!--Generic Default Image not connected with any recipe-->
+        <div id="m_1" style="background: url(img/menu/m_1.jpg)"></div>
+        <div id="m_2" style="background: url(img/menu/m_2.jpg)"></div>
+        <div id="m_3" style="background: url(img/menu/m_3.jpg)"></div>
+  <!--  <div id="m_4" style="background: url(img/menu/m_4.jpg)"></div>
+        <div id="m_5" style="background: url(img/menu/m_5.jpg)"></div>
+        <div id="m_6" style="background: url(img/menu/m_6.jpg)"></div> -->
+      </div>
+      <div class="heading"><h2>Menu (1 columns layout)</h2><span class="triangle"></span></div>
+      <div class="panel-group" id="accordion">
+      
+        <!--Breakfast-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_1" href="#menu1">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Appetizers</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu1" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4><center> *** All  APPETIZERS DO NOT INCLUDE SOUP OR SALAD *** </center></h4>
+                      </div>
+                      <div class="item">
+                        <h4>Special House Salad</h4>
+                        <p>Fresh Lettuce, tomatoes, and homemade dressing.</p>
+                        <span class="price"> 3 .95 </span>
+                      </div>
+                      <div class="item">
+                        <h4>Soup</h4>
+                        <p>Lamb or chicken soup.</p>
+                        <span class="price">2 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Hummus</h4>
+                        <p>Pure chicken peas, sesame batter, olive oil, served with bread.</p>
+                        <span class="price">7 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Baba ghanoush</h4>
+                        <p>Pureed baked eggplants, sesame batter, olive oil, served with bread.</p>
+                        <span class="price">7 .00</span>
+                      </div>
+                       <div class="item">
+                        <h4>Foul</h4>
+                        <p>Sauteed onions, tomatoes, mashed fava beans.</p>
+                        <span class="price">8 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fassolia</h4>
+                        <p>White kidney beans,sauteed with onions, tomatoes, served with bread. Also you can have fassolia with eggs. Your choice.</p>
+                        <span class="price">8 .95</span>
+                      </div>
+                        <div class="item">
+                        <h4>Shak-Shookah(Egg)</h4>
+                        <p>Eggs, sauteed  tomato, onion and spices</p>
+                        <span class="price">8 .00</span>
+                      </div>
+                        <div class="item">
+                        <h4>Leham Segar(Small Sauteed Lamb)</h4>
+                        <p> Minced lamb, sauteed with onions, tomatoes, and yemeni spices served with bread.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Kibdah(lamb liver)</h4>
+                        <p> Sauteed cubed of lamb liver, with onions, tomatoes served with our clay oven bread.</p>
+                        <span class="price">10 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fatah With Honey</h4>
+                        <p>Yemeni style sliced bread, honey, and butter.</p>
+                        <span class="price">8 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Hummus w/ Lamb or Chicken</h4>
+                        <p>Minced lamb or chicken,sauteed with onions,tomatoes, and yemeni spices dressed with Hummus.</p>
+                        <span class="price">12 .95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Entrees Lamb-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_2" href="#menu2">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Entrees Lamb</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu2" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Saltah</h4>
+                        <p> Fresh assorted root vegetables combined with whipped
+                         fenugreek and lamb sauce. Served very hot (volcano style) in traditional Yemeni way serve with clay oven baked bread and roasted lamb or chicken.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fahsah</h4>
+                        <p>Traditional Saltah combined with shredded lamb & served bubbling hot in a clay bowl with warm clay oven bread</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Kabsa lamb</h4>
+                        <p>  Boneless lamb sauteed with long grain basmati rice, scallion and parsley</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Massloug Lamb</h4>
+                        <p> A very tender chunk of lamb sauteed then boiled in seasoned mirepoix for hours. Served with mixed vegetables and rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Mix Grill Kabab</h4>
+                        <p> Mix grilled shish and chicken kabob served with vegetables and rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+
+                       <div class="item">
+                        <h4>Lamb shish kabab</h4>
+                        <p>2 Sticks of small chunk of meat,onion,grilled served with vegetables with rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb chops</h4>
+                        <p>Grilled baby lamb, seasoned to perfection,served with vegetables over rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb chops </h4>
+                        <p>Grilled baby lamb, seasoned to perfection,served with vegetables over rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb haneeth</h4>
+                        <p> Our most popular dish, slow roasted lamb seasoned to perfection. Served with mixed vegetables and rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Agada (Loubia)</h4>
+                        <p>A Yemeni style stew. cooked with large chunks of lamb, okra, carrots, potatoes, onion and green peas served with warm clay oven bread or rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb glaba</h4>
+                        <p>Minced tender lamb sauteed with onions, tomatoes & Served over a bed of long grain basmati rice and topped with a vegtable sauce.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Zorbian Lamb</h4>
+                        <p>Lamb Glaba cooked with long grain basmita rice , scallion , parsley , and onion served mixed and ready to eat.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Fatah</h4>
+                        <p> Lamb Glaba sauteed with chopped clay oven bread, in a lamb broth served in a bowl.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Dinner-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_3" href="#menu3">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Poultry</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu3" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>chicken Haneeth</h4>
+                        <p>Slow oven roasted chicken(half) in imported yemeni seasoning served over a bed of long grain basmati rice and topped with a vegtable sauce.</p>
+                        <span class="price">9 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #2</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">12 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #3</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">18 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #4</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #5</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">15 .00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Salads-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_4" href="#menu5">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>salads</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu5" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Menu Item #1</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #2</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">12 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #3</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">18 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #4</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #5</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">15 .00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Desserts-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_5" href="#menu4">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>desserts</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu4" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Menu Item #1</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #2</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">12 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #3</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">18 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #4</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #5</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">15 .00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Wines-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_6" href="#menu6">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>wines</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu6" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Menu Item #1</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #2</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">12 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #3</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">18 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #4</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">10 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #5</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">15 .00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-2">
+          <div class="footer-logo"></div>
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <div class="footer-contacts">
+            <h3>contacts</h3>
+            <div class="group">
+              <i class="fa fa-map-marker"></i>
+              <p>4120 Lenox Avenue, New York, NY, 10035 76 Saint<br/>Nicholas Avenue</p>
+            </div>
+            <div class="group">
+              <i class="fa fa-mobile"></i>
+              <p>+48 543765234</p>
+            </div>
+            <div class="group">
+              <i class="fa fa-envelope"></i>
+              <p>eattie@mail.com</p>
+            </div>
+            <div class="group last">
+              <i class="fa fa-clock-o"></i>
+              <p>Open 11am-11pm Mon-Wed; 11am-1am Thur-Sat;<br/>noon-midnight Sun</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5">
+          <h3>subscribe for our news</h3>
+          <form class="subscribe-form group" method="post" role="form">
+            <div class="row">
+              <div class="col-lg-7 col-md-7 form-group">
+                <input class="form-control" type="email" name="email" placeholder="enter your email" required>
+              </div>
+              <div class="col-lg-5 col-md-5 form-group">
+                <button type="submit" class="btn btn-primary" name="subscribe">subscribe</button>
+              </div>
+            </div>
+          </form>
+          <h3>find us on social networks</h3>
+          <div class="social-bar">
+            <a href="#" class="fa fa-instagram tooltipped" title="Instagram"></a>
+            <a href="#" class="fa fa-vimeo-square tooltipped" title="Vimeo"></a>
+            <a href="#" class="fa fa-youtube-square tooltipped" title="Youtube"></a>
+            <a href="#" class="fa fa-tumblr-square tooltipped" title="Tumblr"></a>
+            <a href="#" class="fa fa-facebook-square tooltipped" title="Facebook"></a>
+            <a href="#" class="fa fa-linkedin-square tooltipped" title="LinkedIn"></a>
+            <a href="#" class="fa fa-pinterest-square tooltipped" title="Pinterest"></a>
+            <a href="#" class="fa fa-google-plus-square tooltipped" title="Google+"></a>
+          </div>
+        </div> 
+      </div>
+      <div class="copyright row">
+        <div class="col-lg-10 col-md-10 col-lg-offset-2 col-md-offset-2">
+          <p>&copy; Eattie. All Rights Reserved. Designed by <a href="http://8guild.com/" target="_blank">8Guild</a></p>
+        </div>
+      </div>
+      </div>
+    </footer>
+    
+    <!--Javascript (jQuery)-->
+    <script src="js/libs/jquery-1.11.2.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/jquery.validate.min.js"></script>
+    <script src="js/scripts-secondary.js"></script>
+    
+  </body><!--Close Body-->
+</html>
