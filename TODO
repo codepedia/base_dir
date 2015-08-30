@@ -1,0 +1,27 @@
+1)
+# Ask for tables pictures from ycafe and a better background-pictures for:
+#TODO!! Re-size carsoul images to fit the screen.
+    <!--Intro Fullscreen Slideshow-->
+  	<section class="intro-slideshow" id="home">
+    	<ul>
+      	<li style="background-image: url(img/intro/1.jpg)"></li>
+      	<li style="background-image: url(img/intro/2.jpg)"></li>
+      	<li style="background-image: url(img/intro/3.jpg)"></li>
+      </ul>
+    </section>
+
+
+2) Here we had two images (svg|png)... check and delete one...
+..../css/style.css  (line 175 ...thru .. 190)
+
+.logo {
+~
+~
+	/*Delete one of the two pics*/
+	background: url(../img/logo/logo_yellow_img_small2.png) no-repeat;
+}
+.no-svg .logo {
+	background: url(../img/logo/logo_yellow_img_small2.png) no-repeat;
+}
+
+3) Fix dropdown for mobile size screen.....
