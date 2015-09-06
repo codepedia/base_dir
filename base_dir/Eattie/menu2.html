@@ -5,10 +5,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Eattie - Restaurant HTML Template</title>
+    <title>Yemen Cafe- Restaurant HTML Template</title>
     <meta name="description" content="Responsive Restaurant HTML Template" />
-		<meta name="keywords" content="responsive html template, restaurant, cafe, bootstrap 3.0, css, jquery" />
-		<meta name="author" content="8Guild" />
+    <meta name="keywords" content="responsive html template, restaurant, cafe, bootstrap 3.0, css, jquery" />
+    <meta name="author" content="8Guild" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!--Favicon-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -23,7 +23,7 @@
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--Modernizr-->
-		<script src="js/libs/modernizr.custom.js"></script>
+    <script src="js/libs/modernizr.custom.js"></script>
     <!--Adding Media Queries Support for IE8-->
     <!--[if lt IE 9]>
       <script src="js/plugins/respond.min.js"></script>
@@ -33,7 +33,7 @@
   <!--Body-->
   <body>
   
-  	<!-- Preloader -->
+    <!-- Preloader -->
     <div id="preloader">
       <div id="status">
         <img class="svg" src="img/logo-big.svg" width="133" height="120" alt="Eattie"/>
@@ -77,8 +77,8 @@
               <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">menu <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="menu1.html">1 column layout</a></li>
-                  <li><a href="menu2.html">2 columns layout</a></li>
+                  <li><a href="menu1.html"> Brooklyn -- Bay Ridge</a></li>
+                  <li><a href="menu2.html"> Brooklyn -- Downtwon </a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -102,140 +102,492 @@
       </div>
     </header>
     
-    <!--Menu (2 columns layout)-->
-    <section class="block menu2">
-      <div class="heading"><h2>Menu (2 columns layout)</h2><span class="triangle"></span></div>
-      <div class="inner">
-      	<div class="container">
-        	<div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-6">
-            	<h3>breakfast</h3>
-              <div class="menu-block">
-              	<div class="item">
-                	<h4>Soft-Boiled Organic Egg</h4>
-                  <p>with "soldiers"</p>
-                  <span class="price">5 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Omelette</h4>
-                  <p>plain or additional toppings</p>
-                  <span class="price">8 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Breakfast Plate</h4>
-                  <p>Two eggs, sausage or bacon, grits</p>
-                  <span class="price">20 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Sour Cream Hazelnut Waffles</h4>
-                  <p>with warm berries</p>
-                  <span class="price">13 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Scratch Biscuits</h4>
-                  <p>plain or with sausage</p>
-                  <span class="price">10 .00</span>
-                </div>
-              </div>
+    <!--Menu (1 column layout Accordion)-->
+    <section class="block menu1">
+      <div class="fsbg">
+        <!--The id (like id="r_1") of the div element should correspond with the rel attribute (like rel="r_1") of the link below. Thus we connect link with background image-->
+        <div class="visible" style="background-image: url(img/menu/default.jpg)"></div><!--Generic Default Image not connected with any recipe-->
+        <div id="m_1" style="background: url(img/menu/m_1.jpg)"></div>
+        <div id="m_2" style="background: url(img/menu/m_2.jpg)"></div>
+        <div id="m_3" style="background: url(img/menu/m_3.jpg)"></div>
+  <!--  <div id="m_4" style="background: url(img/menu/m_4.jpg)"></div>
+        <div id="m_5" style="background: url(img/menu/m_5.jpg)"></div>
+        <div id="m_6" style="background: url(img/menu/m_6.jpg)"></div> -->
+      </div>
+      <div class="heading"><h2>Bay Ridge Branch </h2><span class="triangle"></span></div>
+      <div class="panel-group" id="accordion">
+      
+        <!--Breakfast-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_1" href="#menu1">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Appetizers</h3>
+              <span class="arrowDown"></span>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-6 col-lg-offset-2 col-md-offset-2">
-            	<h3>lunch</h3>
-              <div class="menu-block">
-              	<div class="item">
-                	<h4>Menu Item #1</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">10 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #2</h4>
-                  <p>Lorem ipsum</p>
-                  <span class="price">12 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #3</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">18 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #4</h4>
-                  <p>Lorem ipsum</p>
-                  <span class="price">10 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #5</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">15 .00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        	<div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-6">
-            	<h3>dinner</h3>
-              <div class="menu-block">
-              	<div class="item">
-                	<h4>Menu Item #1</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">10 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #2</h4>
-                  <p>Lorem ipsum</p>
-                  <span class="price">12 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #3</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">18 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #4</h4>
-                  <p>Lorem ipsum</p>
-                  <span class="price">10 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #5</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">15 .00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-6 col-lg-offset-2 col-md-offset-2">
-            	<h3>wines</h3>
-              <div class="menu-block">
-              	<div class="item">
-                	<h4>Menu Item #1</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">10 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #2</h4>
-                  <p>Lorem ipsum</p>
-                  <span class="price">12 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #3</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">18 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #4</h4>
-                  <p>Lorem ipsum</p>
-                  <span class="price">10 .00</span>
-                </div>
-              	<div class="item">
-                	<h4>Menu Item #5</h4>
-                  <p>Sed ut perspiciatis unde omnis</p>
-                  <span class="price">15 .00</span>
+          </a>
+          <div id="menu1" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item"> <!--This item has its own design.Hence, one time deal -->
+                        <h style="font-size: 22px"><center> *** All  APPETIZERS DO NOT INCLUDE SOUP OR SALAD *** </center></h>
+                      </div>
+                      <div class="item">
+                        <h4>Special House Salad</h4>
+                        <p>Fresh Lettuce, tomatoes, and homemade dressing.</p>
+                        <span class="price"> 3 .95 </span>
+                      </div>
+                      <div class="item">
+                        <h4>Soup</h4>
+                        <p>Lamb or chicken soup.</p>
+                        <span class="price">2 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Hummus</h4>
+                        <p>Pure chicken peas, sesame batter, olive oil, served with bread.</p>
+                        <span class="price">7 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Baba ghanoush</h4>
+                        <p>Pureed baked eggplants, sesame batter, olive oil, served with bread.</p>
+                        <span class="price">7 .00</span>
+                      </div>
+                       <div class="item">
+                        <h4>Foul</h4>
+                        <p>Sauteed onions, tomatoes, mashed fava beans.</p>
+                        <span class="price">8 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fassolia</h4>
+                        <p>White kidney beans,sauteed with onions, tomatoes, served with bread. Also you can have fassolia with eggs. Your choice.</p>
+                        <span class="price">8 .95</span>
+                      </div>
+                        <div class="item">
+                        <h4>Shak-Shookah(Egg)</h4>
+                        <p>Eggs, sauteed  tomato, onion and spices</p>
+                        <span class="price">8 .00</span>
+                      </div>
+                        <div class="item">
+                        <h4>Leham Segar(Small Sauteed Lamb)</h4>
+                        <p> Minced lamb, sauteed with onions, tomatoes, and yemeni spices served with bread.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Kibdah(lamb liver)</h4>
+                        <p> Sauteed cubed of lamb liver, with onions, tomatoes served with our clay oven bread.</p>
+                        <span class="price">10 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fatah With Honey</h4>
+                        <p>Yemeni style sliced bread, honey, and butter.</p>
+                        <span class="price">8 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Hummus w/ Lamb or Chicken</h4>
+                        <p>Minced lamb or chicken,sauteed with onions,tomatoes, and yemeni spices dressed with Hummus.</p>
+                        <span class="price">12 .95</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        
+        <!--Entrees Lamb-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_2" href="#menu2">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Entrees Lamb</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu2" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Saltah</h4>
+                        <p> Fresh assorted root vegetables combined with whipped
+                         fenugreek and lamb sauce. Served very hot (volcano style) in traditional Yemeni way serve with clay oven baked bread and roasted lamb or chicken.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fahsah</h4>
+                        <p>Traditional Saltah combined with shredded lamb & served bubbling hot in a clay bowl with warm clay oven bread</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Kabsa lamb</h4>
+                        <p>  Boneless lamb sauteed with long grain basmati rice, scallion and parsley</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Massloug Lamb</h4>
+                        <p> A very tender chunk of lamb sauteed then boiled in seasoned mirepoix for hours. Served with mixed vegetables and rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Mix Grill Kabab</h4>
+                        <p> Mix grilled shish and chicken kabob served with vegetables and rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+
+                       <div class="item">
+                        <h4>Lamb Shish Kabab</h4>
+                        <p>2 Sticks of small chunk of meat,onion,grilled served with vegetables with rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Chops</h4>
+                        <p>Grilled baby lamb, seasoned to perfection,served with vegetables over rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb chops </h4>
+                        <p>Grilled baby lamb, seasoned to perfection,served with vegetables over rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Haneeth</h4>
+                        <p> Our most popular dish, slow roasted lamb seasoned to perfection. Served with mixed vegetables and rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Agada (Loubia)</h4>
+                        <p>A Yemeni style stew. cooked with large chunks of lamb, okra, carrots, potatoes, onion and green peas served with warm clay oven bread or rice.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Glaba</h4>
+                        <p>Minced tender lamb sauteed with onions, tomatoes & Served over a bed of long grain basmati rice and topped with a vegtable sauce.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Zorbian Lamb</h4>
+                        <p>Lamb Glaba cooked with long grain basmita rice , scallion , parsley , and onion served mixed and ready to eat.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                       <div class="item">
+                        <h4>Lamb Fatah</h4>
+                        <p> Lamb Glaba sauteed with chopped clay oven bread, in a lamb broth served in a bowl.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Poultry-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_3" href="#menu3">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Poultry</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu3" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>chicken Haneeth</h4>
+                        <p>Slow oven roasted chicken(half) in imported yemeni seasoning served over a bed of long grain basmati rice and topped with a vegtable sauce.</p>
+                        <span class="price">9 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Glaba (Chicken Curry)</h4>
+                        <p>Minced chicken mixed with root vegetables, sauteed and served with rice.</p>
+                        <span class="price">13.95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Agda (Loubia)</h4>
+                        <p>Cooked massloug chicken with vegetables in yemeni style.</p>
+                        <span class="price">13 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Kabab</h4>
+                        <p>2 Sticks of small chunck of chicken and onions grilled served with vegetables over rice.</p>
+                        <span class="price">13 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Massloug Chicken</h4>
+                        <p>Chicken boiled in a seasoned mirepoix. Served with mixed vegetables and rice .</p>
+                        <span class="price">13 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Saltah</h4>
+                        <p>Fresh assorted root vegetables stew served in a bubbling hot clay bowl topped with a tongy whipped fenugreek. Served with a half chicken Haneeth Masloug, warm clay oven bread and a side of sahawig (spicy chutney)</p>
+                        <span class="price">13 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Chicken Zorbian</h4>
+                        <p>South Yemeni dish,boneless chicken mixed with rice.</p>
+                        <span class="price">13 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Chicken Kabsa</h4>
+                        <p>Chopped half chicken sauteed with long grain basmati rice, Scallion, parsley, and onion served mixed and ready to eat.</p>
+                        <span class="price">13 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Charcoal Girlled Chicken</h4>
+                        <p>Half chicken grilled on charcoal flames to perfection served over a bed of long grain basmati rice and topped with a vegetable sauce.</p>
+                        <span class="price">13 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fish of the Day</h4>
+                        <p>ask for today's fish</p>
+                        <span class="price">15 .00</span>
+                      </div>         
+                       <div class="item"> <!--This item has its own design.Hence, one time deal -->
+                          <h style="font-size: 22px"><center>Side orders : Rice $5.00 , Breead $2.00</center></h>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       
+        <!--Lamb Lunch-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_5" href="#menu4">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Lamb (Lunch)</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu4" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Saltah</h4>
+                        <p>Fresh assorted root vegetables combined with whipped fenugreek and lamb sauce. Served very hot (volcano style) in traditional Yemeni way serve with clay oven baked bread and roasted lamb or chicken.</p>
+                        <span class="price">10 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #2</h4>
+                        <p>Lorem ipsum</p>
+                        <span class="price">12 .00</span>
+                      </div>
+                      <div class="item">
+                        <h4>Fahsah</h4>
+                        <p>Traditional Saltah combined with shredded lamb and served bubbling hot in a clay bowl with warm clay oven bread</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Kabsa Lamb</h4>
+                        <p>Boneless lamb sauteed with long grain basmati rice, scallion and parsley</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Massloug Lamb</h4>
+                        <p>A very tender chunk of lamb sauteed then boiled in seasoned mirepoix for hours. Served with mixed vegetables and rice.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Menu Item #5</h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">11 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Lamb Shish Kabab</h4>
+                        <p>2 Sticks of small chunk of meat,onion,grilled served with vegetables with rice.</p>
+                        <span class="price">11 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Lamb Chops</h4>
+                        <p>Grilled baby lamb, seasoned to perfection,served with vegetables over rice.  </p>
+                        <span class="price">11 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Lamb Haneeth</h4>
+                        <p>Our most popular dish, slow roasted lamb seasoned to perfection. Served with mixed vegetables and rice.</p>
+                        <span class="price">11 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Lamb Agada (Loubia)</h4>
+                        <p>A Yemeni style stew. cooked with large chunks of lamb, okra, carrots, potatoes, onion and green peas served with warm clay oven bread or rice.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Lamb Glaba</h4>
+                        <p>Minced tender lamb sauteed with onions, tomatoes and Served over a bed of long grain basmati rice and topped with a vegtable sauce.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Zorbian Lamb</h4>
+                        <p>Lamb Glaba cooked with long grain basmita rice , scallion , parsley , and onion served mixed and ready to eat.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Lamb Fatah</h4>
+                        <p>Lamb Glaba sauteed with chopped clay oven bread, in a lamb broth served in a bowl.</p>
+                        <span class="price">11 .95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Poultry Lunch-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_6" href="#menu6">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Poultry (Lunch)</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu6" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Chicken Haneeth</h4>
+                        <p>Slow oven roasted chicken(half) in imported yemeni seasoning served over a bed of long grain basmati rice and topped with a vegtable sauce.</p>
+                        <span class="price">9 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Glaba (Chicken Curry)</h4>
+                        <p>Minced chicken mixed with root vegetables, sauteed and served with rice.</p>
+                        <span class="price">10 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Agda (Loubia)</h4>
+                        <p>Cooked massloug chicken with vegetables in yemeni style.</p>
+                        <span class="price">9 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Kabab</h4>
+                        <p>2 Sticks of small chunck of chicken and onions grilled served with vegetables over rice.</p>
+                        <span class="price">9 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Massloug Chicken</h4>
+                        <p>Chicken boiled in a seasoned mirepoix. Served with mixed vegetables and rice .</p>
+                        <span class="price">9 .95</span>
+                      </div>
+                      <div class="item">
+                        <h4>Chicken Saltah</h4>
+                        <p>Fresh assorted root vegetables stew served in a bubbling hot clay bowl topped with a tongy whipped fenugreek. Served with a half chicken Haneeth Masloug, warm clay oven bread and a side of sahawig (spicy chutney)</p>
+                        <span class="price">9 .95</span>
+                      </div> 
+                      <div class="item">
+                        <h4>Chicken Zorbian</h4>
+                        <p>South Yemeni dish,boneless chicken mixed with rice.</p>
+                        <span class="price">9 .95</span>
+                      </div>  
+                      <div class="item">
+                        <h4>Chicken Kabsa</h4>
+                        <p>Chopped half chicken sauteed with long grain basmati rice, Scallion, parsley, and onion served mixed and ready to eat.</p>
+                        <span class="price">9 .95</span>
+                      </div>                      
+                      <div class="item">
+                        <h4>Chicken Supreme</h4>
+                        <p>Chicken cutlet, dredged in flour and batter sauce served with rice.</p>
+                        <span class="price">9 .95</span>
+                      </div>                      
+                      <div class="item">
+                        <h4>Fish of the Day</h4>
+                        <p>Ask for today's fish.</p>
+                        <span class="price">18 .95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Beverages-->
+        <div class="panel">
+          <a class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-menu="m_4" href="#menu5">
+            <div class="bg"></div>
+            <div class="container">
+              <h3>Beverages</h3>
+              <span class="arrowDown"></span>
+            </div>
+          </a>
+          <div id="menu5" class="panel-collapse collapse"><!--href attribute of the link above should correspond with id of current div-->
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu-block">
+                      <div class="item">
+                        <h4>Iced Tea</h4>
+                        <span class="price">1 .50</span>
+                      </div>
+                      <div class="item">
+                        <h4>Special Tea Yemencafe</h4>
+                        <span class="price">1 .50</span>
+                      </div>
+                      <div class="item">
+                        <h4>Yemen Cafe</h4>
+                        <span class="price">1 .50</span>
+                      </div>
+                      <div class="item">
+                        <h4>pepsi</h4>
+                        <span class="price">1 .50</span>
+                      </div>
+                      <div class="item">
+                        <h4>Ginger Ale </h4>
+                        <p>Sed ut perspiciatis unde omnis</p>
+                        <span class="price">1 .50</span>
+                      </div>                      
+                      <div class="item">
+                        <h4>Sieera Mist(diet)</h4>
+                        <span class="price">1 .50</span>
+                      </div>                      
+                      <div class="item">
+                        <h4>Orange</h4>
+                        <span class="price">1 .50</span>
+                      </div>                      
+                      <div class="item">
+                        <h4>Seltzer Water</h4>
+                        <span class="price">1 .50</span>
+                      </div>                      
+                      <div class="item">
+                        <h4>Hawaiian Punch</h4>
+                        <span class="price">1 .50</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- Global -->
     </section>
     
-    <!--Footer-->
+    <!--Footer is here -->
     <footer>
       <div class="container">
       <div class="row">
@@ -297,10 +649,10 @@
     </footer>
     
     <!--Javascript (jQuery)-->
-		<script src="js/libs/jquery-1.11.2.min.js"></script>
-		<script src="js/plugins/bootstrap.min.js"></script>
-		<script src="js/plugins/jquery.validate.min.js"></script>
-		<script src="js/scripts-secondary.js"></script>
+    <script src="js/libs/jquery-1.11.2.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/jquery.validate.min.js"></script>
+    <script src="js/scripts-secondary.js"></script>
     
   </body><!--Close Body-->
 </html>
