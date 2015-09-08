@@ -25,3 +25,7 @@
 }
 
 3) Fix dropdown for mobile size screen.....
+
+4) Do we really need the index page ... It is the page that shows you 
+which hoe page do you want to go to : slide VS static ... it is here 
+Base_dir/HELP/index.html
